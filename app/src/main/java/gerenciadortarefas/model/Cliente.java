@@ -1,16 +1,16 @@
 package gerenciadortarefas.model;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public abstract class Cliente {
 
-    private int id;
+    int id;
     String contato;
     String email;
     String endereco;
-    Date dataCadastro;
+    LocalDateTime dataCadastro;
 
-    public Cliente(int id, String contato, String email, String endereco, Date dataCadastro) {
+    public Cliente(int id, String contato, String email, String endereco, LocalDateTime dataCadastro) {
         this.id = id;
         this.contato = contato;
         this.email = email;
@@ -50,11 +50,11 @@ public abstract class Cliente {
         this.endereco = endereco;
     }
 
-    public Date getDataCadastro() {
+    public LocalDateTime getDataCadastro() {
         return dataCadastro;
     }
 
-    public void setDataCadastro(Date dataCadastro) {
+    public void setDataCadastro(LocalDateTime dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
 

@@ -1,15 +1,16 @@
 package gerenciadortarefas.model;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class ClienteJuridico extends Cliente {
 
     private String razaoSocial;
     private String CNPJ;
 
-    public ClienteJuridico(int id, String contato, String email, String endereco, Date dataCadastro, String razaoSocial,
+    public ClienteJuridico(int idClienteJuridico, String contato, String email, String endereco, LocalDateTime dataCadastro,
+            String razaoSocial,
             String CNPJ) {
-        super(id, contato, email, endereco, dataCadastro);
+        super(idClienteJuridico, contato, email, endereco, dataCadastro);
         this.razaoSocial = razaoSocial;
         this.CNPJ = CNPJ;
     }
